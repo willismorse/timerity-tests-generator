@@ -174,5 +174,5 @@ fabric.properties
 
 .DS_Store
 /build/
-.idea/
 dist/
+.idea/$CACHE*
