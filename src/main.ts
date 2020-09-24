@@ -3,7 +3,8 @@ import * as fs from "fs";
 console.log("Started main");
 
 import { WaveFile } from 'wavefile';
-import {NumericUtils} from "./NumericUtilities";
+import {NumericUtils} from "./utilities/NumericUtilities";
+import {importMIDI} from "./ImportMIDI";
 let wav = new WaveFile();
 
 let sampleRate = 44100.0;
@@ -38,3 +39,5 @@ if (!fs.existsSync(generatedDirPath)){
 
 let dataFilePath = `${generatedDirPath}/triangle-one-second.wav`;
 fs.writeFileSync(dataFilePath, wav.toBuffer());
+
+importMIDI( "./midi/tubes.mid");

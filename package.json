@@ -14,6 +14,10 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
+    "@tonejs/midi": "^2.0.25",
+    "@types/lodash": "^4.14.161",
+    "lodash": "^4.17.20",
+    "ramda": "^0.27.1",
     "ts-node": "^9.0.0",
     "wavefile": "^11.0.0"
   }
